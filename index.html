@@ -267,5 +267,7 @@
   <script>
     (()=>{const addManualNav=()=>{const nav=document.querySelector('.nav');if(!nav||nav.querySelector('[data-manual-page]'))return;const button=document.createElement('button');button.dataset.manualPage='true';button.innerHTML='<span>⌘</span>Manual';button.onclick=()=>{window.location.href='animal-behaviour-manual.html'};nav.append(button)};const app=document.getElementById('app');if(app)new MutationObserver(addManualNav).observe(app,{childList:true,subtree:true});addManualNav()})();
   </script>
+  <style>.manual-corner{position:fixed;z-index:90;right:18px;top:18px;display:flex;align-items:center;gap:7px;padding:10px 13px;border-radius:999px;background:#fff;color:#173d2a;border:1px solid #cfe1d2;box-shadow:0 8px 24px #173d2a26;text-decoration:none;font:800 13px/1 Inter,system-ui,sans-serif}.manual-corner:hover{background:#eaf4eb}@media(max-width:720px){.manual-corner{right:14px;top:14px}}</style>
+  <script>(()=>{const addManualCorner=()=>{if(document.querySelector('[data-manual-corner]'))return;const link=document.createElement('a');link.dataset.manualCorner='true';link.className='manual-corner';link.href='animal-behaviour-manual.html';link.innerHTML='⌘ <span>Manual</span>';document.body.append(link)};addManualCorner()})();</script>
 </body>
 </html>
