@@ -38,6 +38,9 @@
       "Search an animal or breed — e.g. Sahiwal, dog, Golden Retriever":"प्राणी किंवा जात शोधा — उदा. साहीवाल, कुत्रा, गोल्डन रिट्रीव्हर","Search name, clinic, specialty, or area":"नाव, क्लिनिक, विशेषता किंवा क्षेत्र शोधा","Ask Aashu":"आशूला विचारा","Website language":"वेबसाइट भाषा"
     }
   };
+  Object.assign(words.hi,{"ACTIVE CARE SPACE":"सक्रिय देखभाल स्थान","My animals":"मेरे पशु","Health records":"स्वास्थ्य रिकॉर्ड","Temperature & sensors":"तापमान और सेंसर","Diet & medicines":"आहार और दवाएँ","Animal care overview":"पशु देखभाल अवलोकन","Farm resources":"फार्म संसाधन"});
+  Object.assign(words.bn,{"ACTIVE CARE SPACE":"সক্রিয় পরিচর্যা ক্ষেত্র","My animals":"আমার প্রাণী","Health records":"স্বাস্থ্য রেকর্ড","Temperature & sensors":"তাপমাত্রা ও সেন্সর","Diet & medicines":"খাদ্য ও ওষুধ","Animal care overview":"প্রাণী পরিচর্যা সারাংশ","Farm resources":"খামারের সম্পদ"});
+  Object.assign(words.mr,{"ACTIVE CARE SPACE":"सक्रिय काळजी क्षेत्र","My animals":"माझे प्राणी","Health records":"आरोग्य नोंदी","Temperature & sensors":"तापमान आणि सेन्सर","Diet & medicines":"आहार आणि औषधे","Animal care overview":"प्राणी काळजी आढावा","Farm resources":"शेती संसाधने"});
   Object.assign(words.hi, {
     "Here’s Bella’s current health picture.":"यहाँ बेला के वर्तमान स्वास्थ्य की जानकारी है।",
     "Check appetite and eye area":"भूख और आँखों के क्षेत्र की जाँच करें",
