@@ -224,6 +224,6 @@
   window.addEventListener('hashchange',()=>{if(location.hash==='#vet-workspace')showWorkspace();else mountNav()});
   window.addEventListener('herdcare:cases-updated',schedule);
   window.addEventListener('storage',schedule);
-  const root=document.getElementById('app');if(root)new MutationObserver(schedule).observe(root,{childList:true,subtree:true});
+  const root=document.getElementById('app');if(root)new MutationObserver(schedule).observe(root,{childList:true});
   schedule();
 })();

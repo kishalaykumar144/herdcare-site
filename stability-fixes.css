@@ -1,0 +1,14 @@
+/* HerdCare stability and narrow-screen navigation fixes. */
+.map-load{text-decoration:none}
+@media(max-width:720px){
+  .shell{display:block}
+  .sidebar{position:sticky;z-index:60;top:0;display:block;padding:8px 10px;background:var(--forest);box-shadow:0 6px 18px #173d2a24}
+  .sidebar .brand,.sidebar .farm,.sidebar .side-foot{display:none}
+  .nav{display:flex;gap:5px;overflow-x:auto;overscroll-behavior-x:contain;padding:1px 0 3px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav::-webkit-scrollbar{display:none}
+  .nav button{flex:0 0 auto;padding:8px 10px;white-space:nowrap;font-size:11px}
+  .nav button span{width:auto;margin-right:4px}
+  .main{padding-top:17px}
+}
+@media(max-width:430px){.nav button{padding:7px 9px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

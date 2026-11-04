@@ -201,6 +201,7 @@
   window.addEventListener('hashchange',()=>{if(location.hash==='#cases')showCases();else mountNav()});
   window.addEventListener('herdcare:cases-updated',schedule);
   window.addEventListener('storage',schedule);
-  const root=document.getElementById('app');if(root)new MutationObserver(schedule).observe(root,{childList:true,subtree:true});
+  document.addEventListener('change',event=>{if(event.target.matches?.('[data-language-select],#language'))schedule()});
+  const root=document.getElementById('app');if(root)new MutationObserver(schedule).observe(root,{childList:true});
   seedCases();schedule();
 })();
