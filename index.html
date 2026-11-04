@@ -512,4 +512,6 @@
       window.addEventListener('storage',schedule);new MutationObserver(schedule).observe(document.getElementById('app'),{childList:true,subtree:true});wrapUpdates();mount();setInterval(()=>{wrapUpdates();schedule()},15000);
     })();
   </script>
+  <link rel="stylesheet" href="care-cases.css">
+  <script src="care-cases.js"></script>
 </html>
